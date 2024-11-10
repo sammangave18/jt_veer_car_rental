@@ -1,14 +1,16 @@
-.mainHome{
-    background-color: rgb(0, 18, 58);
-    padding: 20px;
+.mainHome {
+  background-color: rgb(0, 18, 58);
+  padding: 20px;
 }
-h1{
-    color: rgb(255, 195, 116);
-    font-family: cursive;
-    text-align: center;
-  }
-  h3{
-    color: white;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-  }
+
+.headName1 {
+  color: rgb(255, 195, 116);
+  font-family: cursive;
+  text-align: center;
+}
+
+.headName2 {
+  color: rgb(122, 0, 0);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}

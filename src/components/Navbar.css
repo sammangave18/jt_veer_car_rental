@@ -1,20 +1,20 @@
-/* src/components/Navbar.css */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  .navbar-item {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .navbar-item:hover {
-    /* background-color: #ddd; */
-    color: rgb(107, 222, 254);
-  }
-  
+  background-color: black;
+  /* background-color: rgb(33, 33, 33); */
+  color: white;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.LogoName {
+  font-size: 15px;
+  font-family: cursive;
+  color: gold;
+  text-decoration: none;
+}
+.LogoName:hover {
+  color: rgb(255, 235, 197);
+  text-decoration: underline;
+}

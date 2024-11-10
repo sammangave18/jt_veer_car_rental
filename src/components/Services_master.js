@@ -1,9 +1,12 @@
 import React from 'react'
+import "./Services_master.css"
 
-export default function Services_master() {
+const Services_master = () => {
   return (
-    <div>
-      <h1>welcome to services</h1>
-    </div>
+   <>
+   <h1>Welcome to Services</h1>
+   </>
   )
 }
+
+export default Services_master

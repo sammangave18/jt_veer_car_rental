@@ -1,0 +1,18 @@
+.sidebar {
+  width: 200px;
+  background-color: rgb(33, 33, 33);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-item {
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  color: rgb(193, 242, 255);
+}
