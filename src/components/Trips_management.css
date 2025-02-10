@@ -1,0 +1,72 @@
+/* Styling for Trips Management page */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Search Box */
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-danger {
+    background-color: #f44336;
+  }
+  
+  .btn-danger:hover {
+    background-color: #e60000;
+  }
+  
+  /* Table Styling */
+  .trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trips-table th, .trips-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .trips-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .trips-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .trips-table tr:hover {
+    background-color: #f1f1f1;
+  }

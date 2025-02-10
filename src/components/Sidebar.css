@@ -1,18 +1,25 @@
-.sidebar {
-  width: 200px;
-  background-color: rgb(33, 33, 33);
-  padding: 20px;
+/* Sidebar.css */
+.sidebar-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  position: fixed;
+  top: 50px;  /* Leave space for navbar */
+  left: 0;
+  height: calc(100vh - 70px); /* Sidebar starts below the navbar */
+  width: 190px; /* Sidebar width */
+  /* background-color: #343a40; */
 }
 
-.sidebar-item {
-  padding: 10px 0;
+.sidebar {
+  flex: 1;
+}
+
+.nav-link {
+  padding: 10px 15px;
   color: white;
   text-decoration: none;
 }
 
-.sidebar-item:hover {
-  color: rgb(193, 242, 255);
+.nav-link:hover {
+  background-color: #495057;
 }

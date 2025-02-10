@@ -1,15 +1,19 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar">
-      {/* <img src="../img/VCR.png" alt="Logo" className="navbar-logo" /> */}
-      {/* logo is not working */}
-      <img src="../img/VTT_old.png" alt="" />
-      <Link className="LogoName">VEER CAR RENTAL</Link> 
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid">
+        {/* logo is not working */}
+        {/* <img src="../img/vcr_logo.png" alt="Logo" className="navbar-logo" /> */}
+        <Link to="/" className="navbar-brand">
+          VEER CAR RENTAL
+        </Link>
+      </div>
+    </nav>
   );
 };
 
