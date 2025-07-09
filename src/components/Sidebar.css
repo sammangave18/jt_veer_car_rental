@@ -1,18 +1,44 @@
-.sidebar {
-  width: 200px;
-  background-color: rgb(33, 33, 33);
-  padding: 20px;
+/* Sidebar.css */
+.sidebar-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  position: fixed;
+  top: 50px;  /* Starts below the navbar */
+  left: -250px; /* Initially hidden */
+  height: calc(100vh - 50px); /* Sidebar height below navbar */
+  width: 250px; /* Sidebar width */
+  background-color: #343a40;
+  transition: left 0.3s ease-in-out;
+  z-index: 900; /* Ensure it's below navbar */
 }
 
-.sidebar-item {
-  padding: 10px 0;
+.sidebar-container.open {
+  left: 0; /* Slide in when open */
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+}
+
+.nav-link {
+  padding: 10px 15px;
   color: white;
   text-decoration: none;
 }
 
-.sidebar-item:hover {
-  color: rgb(193, 242, 255);
+.nav-link:hover {
+  background-color: #495057;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1101; /* Above navbar */
 }

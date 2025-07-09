@@ -1,6 +1,7 @@
 const express = require("express");
 const {
   getAllEmployees,
+  getEmployeesByData,
   addEmployee,
   updateEmployee,
   deleteEmployee,
@@ -16,6 +17,7 @@ const router = express.Router();
 // const upload = multer({ storage: storage });
 
 router.get("/", getAllEmployees); // Fetch all employees
+router.get("/search/:data", getEmployeesByData);
 router.post("/", upload.single("profilePhoto"), addEmployee); // Add a new employee
 router.put("/:id", updateEmployee); // delete single employee by id
 router.delete("/:id", deleteEmployee); // delete single employee by id

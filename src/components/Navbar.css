@@ -1,20 +1,24 @@
 .navbar {
-  background-color: black;
-  /* background-color: rgb(33, 33, 33); */
-  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  z-index: 1000;
+  background-color: #343a40;
 }
-.LogoName {
-  font-size: 15px;
-  font-family: cursive;
+
+/* Ensure Navbar Stays Below Sidebar */
+.navbar + .main-content {
+  margin-top: 56px; /* Adjust based on navbar height */
+}
+
+.navbar-brand {
   color: gold;
-  text-decoration: none;
+  font-size: 18px;
+  margin-left: 50px;
 }
-.LogoName:hover {
-  color: rgb(255, 235, 197);
+
+.navbar-brand:hover {
+  color: rgb(231, 213, 108);
   text-decoration: underline;
 }

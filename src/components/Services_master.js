@@ -4,7 +4,7 @@ import "./Services_master.css"
 const Services_master = () => {
   return (
    <>
-   <h1>Welcome to Services</h1>
+   <h1> <b> Welcome to Services </b></h1>
    </>
   )
 }
